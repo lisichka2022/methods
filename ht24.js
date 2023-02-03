@@ -86,32 +86,25 @@ for (let i = 0; i < 20; i++) {
     let mas=[
         [1, 2, 3], [4, 5], [6]
     ];
-
-    function sumMas(mas){
-     let result=0;
+     let result1=0;
+     mas=mas.flat(Infinity)
       for(let v=0;v<mas.length;v++){
-        for(let j=0;j<mas[v].length;j++){
-     result+=mas[v][j]}
-        }
-     return result;
+     result1+=mas[v]
     }
-    console.log(sumMas(mas));
+       
+    
+    console.log(result1);
 
     //11
 
     let mas1=[
         [[1, 2], [3, 4]], [[5, 6], [7, 8]]
     ];
-
-    function sumMas1(mas1){
-     let resultat=0;
+    let resultat=0;
+     mas1=mas1.flat(Infinity);
       for(let d =0;d<mas1.length;d++){
-        for(let k=0;k<mas1[d].length;k++){
-            for(let l=0;l<mas1[d][k].length;l++){
-
-     resultat+=mas1[d][k][l]}
-        }
+      resultat+=mas1[d];
     }
-     return resultat;
-    }
-    console.log(sumMas1(mas1));
+        
+    
+    console.log(resultat);
